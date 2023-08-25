@@ -1,13 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Tailwind Sidenav</title>
+  <link rel="stylesheet" href="tailwind.css">
+</head>
+<body class="flex relative justify-center-center scroll-smooth">
+  <aside class="bg-purple-100 fixed top-0 left-0 bottom-0 w-1/5">
+    <div class="logo">
+      Logo
+    </div>
+    <div class="nav-links flex flex-col">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </aside>
+  <div class="container ml-auto w-4/5" >
+  <section id="hero" class="bg-orange-100">
+    Hero
+  </section>
+  <section id="about" class="bg-yellow-100">
+    About
+  </section>
+  <section id="services" class="bg-green-100">
+    Services
+  </section>
+  <section id="projects" class="bg-blue-100">
+    Projects
+  </section>
+  <section id="contact" class="bg-indigo-100">
+    Contact
+  </section>
+</div>
+
+  <script src="main.js"></script>
+</body>
 </html>
